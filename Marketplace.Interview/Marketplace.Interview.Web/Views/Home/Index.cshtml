@@ -31,6 +31,18 @@
                 }
             </td></tr>
     }
+        <tr>
+            <td colspan="4" align="right">Shipping</td>
+            <td>@(Model.Basket.Discount + Model.Basket.Shipping) </td>
+        </tr>
+        <tr>
+            <td colspan="4" align="right">Discount</td>
+            <td>@Model.Basket.Discount </td>
+        </tr>
+        <tr>
+            <td colspan="4" align="right">Total Shipping</td>
+            <td>@Model.Basket.Shipping</td>
+        </tr>
     </tbody>
     </table>
     </fieldset>
@@ -56,3 +68,4 @@
         <input type="submit" value="Submit" />
     }
       </fieldset>
+    
